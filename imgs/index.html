@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <section id="home" class="home1">
+        
+    <div class="circle"></div>
+    
+    <header>
+      <a href="#"><img src="logo.png" class="logo"></a>
+      <ul>
+        <li><a href="#About ">About</a></li>
+        <li><a href="#Why ">Why I like</a></li>
+        <li><a href="#Myfav ">My fav</a></li>
+      </ul>
+    </header>
+  <div class="content">
+    <div class="textBox">
+      <h2 style="color: aliceblue;">This is <br>Demon<span>Slayer</span></h2>
+      <p style="color: aliceblue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Sed praesentium officiis rerum! Est quos facilis corrupti corporis unde natus sunt aperiam quia.
+        Porro tempore quod doloribus eius suscipit voluptates voluptatem.</p>
+    </div>
+    <div class="imgBox">
+      <img src="tanjiro.jpg" class="leo">
+    </div>
+  </div>
+  
+  <ul class="thumb">
+    <li><img src="tanjiro.jpg" onclick="imgSlider('tanjiro.jpg'); changeCircleColor('red')"></li>
+  </ul>
+  
+  </section>
+
+  <script>
+    function imgSlider(anything){
+      document.querySelector('.leo').src = anything;
+    }
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+
+    var typed = new Typed(".input",{
+      strings:['My name is','Nathaniel Ngethe','And this is','Demon slayer'],
+      typeSpeed: 70,
+      backSpeed: 60,
+  })
+  </script>
+</body>
+</html>
